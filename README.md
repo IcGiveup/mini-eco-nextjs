@@ -6,31 +6,31 @@ https://mini-eco-nextjs.vercel.app
 GitHub Repository:
 https://github.com/IcGiveup/mini-eco-nextjs
 
-📌 Project Overview
+📌 About This Project
 
-This project is a Mini E-Commerce Frontend built using Next.js (App Router) and React with TypeScript as part of a technical evaluation task.
+I built this Mini E-Commerce frontend as part of a technical evaluation task for a Frontend Developer Intern position.
 
-The goal of this project was to design a clean, scalable, and responsive frontend application while following proper folder structure and reusable component patterns.
+The goal was to create a clean, responsive, and well-structured application using Next.js and React. While building this project, I focused on writing organized code, separating logic properly, and keeping the UI simple but professional.
 
-It demonstrates:
+🛠 What I Implemented
 
-Dynamic routing using Next.js App Router
+Product listing page with image, title, price, and short description
 
-Client-side filtering (category & price range)
+Dynamic filtering by category and price range
 
-Pagination logic
+Pagination
 
-Loading skeleton implementation
+Product details page using dynamic routing
+
+Loading skeleton for better user experience
 
 Proper error handling
 
-Fully responsive UI using Tailwind CSS
+Fully responsive layout (mobile, tablet, desktop)
 
-Clean code structure with reusable components
+⚙️ Tech Stack
 
-🛠 Tech Stack
-
-Next.js 16 (App Router)
+Next.js (App Router)
 
 React
 
@@ -41,38 +41,30 @@ Tailwind CSS
 DummyJSON API
 
 📂 Project Structure
-app/
-  ├── page.tsx                → Product listing page
-  ├── product/[id]/page.tsx   → Dynamic product details page
-components/
-  ├── ProductCard.tsx
-  ├── ProductSkeleton.tsx
-services/
-  └── api.ts                  → API logic
-types/
-  └── product.ts              → Type definitions
 
-The project follows a modular structure to keep logic, UI, and API handling separated and maintainable.
+I organized the project to keep things clean and maintainable:
 
-⚙️ Features Implemented
+app/ → Pages and routing
 
-✔ Product listing page
-✔ Dynamic filtering (category & price range)
-✔ Pagination
-✔ Dynamic product details page
-✔ Loading states & skeleton UI
-✔ Error handling
-✔ Responsive design (mobile, tablet, desktop)
+components/ → Reusable UI components
 
-🧠 Design Decisions
+services/ → API logic
 
-Used server-side data fetching with fetch and no-store for fresh data.
+types/ → TypeScript interfaces
 
-Implemented client-side filtering for smoother UX.
+This structure makes it easier to scale or modify in the future.
 
-Created reusable UI components to avoid code duplication.
+💡 My Approach
 
-Used TypeScript interfaces for type safety and maintainability.
+Used reusable components to avoid duplication
+
+Kept API logic separate from UI
+
+Applied TypeScript for better type safety
+
+Implemented filtering on the client side for smoother interaction
+
+Added loading skeleton to improve user experience
 
 🚀 How to Run Locally
 git clone https://github.com/IcGiveup/mini-eco-nextjs
