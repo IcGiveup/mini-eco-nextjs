@@ -68,9 +68,13 @@ Added loading skeleton to improve user experience
 
 🚀 How to Run Locally
 git clone https://github.com/IcGiveup/mini-eco-nextjs
+
 cd mini-eco-nextjs
+
 npm install
+
 npm run dev
+
 
 Then open:
 
