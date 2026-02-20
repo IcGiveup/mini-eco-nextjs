@@ -9,7 +9,6 @@ interface ProductsResponse {
   limit: number;
 }
 
-// 🔹 Get Products with Pagination
 export async function getProducts(
   limit: number,
   skip: number
@@ -28,7 +27,6 @@ export async function getProducts(
   return res.json();
 }
 
-// 🔹 Get Single Product by ID
 export async function getProductById(
   id: string
 ): Promise<Product> {
@@ -42,8 +40,19 @@ export async function getProductById(
 
   return res.json();
 }
+export async function getAllProducts(): Promise<Product[]> {
+  const res = await fetch(`${BASE_URL}/products?limit=194`, {
+    cache: "no-store",
+  });
 
-// 🔹 Get All Categories
+  if (!res.ok) {
+    throw new Error("Failed to fetch products");
+  }
+
+  const data = await res.json();
+  return data.products;
+}
+
 export async function getCategories(): Promise<string[]> {
   const res = await fetch(`${BASE_URL}/products/categories`, {
     cache: "no-store",
